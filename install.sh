@@ -2,15 +2,16 @@
 # 
 # This is the install script which will install the material of the 
 # Weekendschool / scratchClient presentation and workshop on 
-# a Raspberry Pi.
+# a Raspberry Pi as it was given at the Pi And More conference 
+# in Krefeld at 14 January 2017.
 #
 # It will:
 # - download and install the Arduino IDE 1.8.0, which is needed for
 #   loading the scratchClient sketch in the Arduino Nano or Uno.
 # - download and put scratchClient at the right place.
-# - download the packages that scratchClient needs.
+# - download and install the packages that scratchClient needs.
 # - put the material of the PiAndMore workshop in a subfolder on the 
-#   desktop.
+#   desktop and give the scripts execute permission.
 #
 # Author: Hans de Jong
 #
@@ -66,9 +67,18 @@ cp install.sh ~/Desktop/PiAndMore
 				# it will have left the executable property by this copy, but 
 				# that is fine. It is only to be used for reference since the 
 				# references to the paths would be wrong anyway.
+cd ~/Desktop/PiAndMore/ForHelpers
+				# Go to the directory with scripts
+chmod 744 DownloadLes.bash
+chmod 744 StartScratch.bash
+cdmod 744 UploadResultaten.bash
+chmod 744 USBpoorten.sh
 				
 				# FINAL CLEANUP
 				# remove the folder into which the material was unpacked.
 				# note that this also deletes this install script, but since
-				# that is the last line, it should not be a problem.
+				# that is the almost last line, it should not be a problem.
 rm -r ~/Weekendschool-PiAndMore-PiAndMore*
+
+echo "Hit any key to close"
+read a
