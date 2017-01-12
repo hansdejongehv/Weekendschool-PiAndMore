@@ -1,0 +1,8 @@
+cd ~				# go to the home folder
+wget https://github.com/hansdejongehv/Weekendschool-PiAndMore/archive/PiAndMore-v0.2.tar.gz
+				# download the archive
+tar xzf PiAndMore-*		# unpack the archive. The asterix is to avoid typing too much.
+cd Wee*				# change directory to the directory into which into which the
+                                # archive was unpacked. The asterix is to avoid typing
+chmod 744 install.sh		# make sure that the install script can be executed.
+./install.sh			# execute the install script
