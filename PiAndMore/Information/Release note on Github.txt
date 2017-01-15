@@ -1,5 +1,5 @@
 cd ~				# go to the home folder
-wget https://github.com/hansdejongehv/Weekendschool-PiAndMore/archive/PiAndMore-v0.2.tar.gz
+wget https://github.com/hansdejongehv/Weekendschool-PiAndMore/archive/PiAndMore-vX.X.tar.gz
 				# download the archive
 tar xzf PiAndMore-*		# unpack the archive. The asterix is to avoid typing too much.
 cd Wee*				# change directory to the directory into which into which the
