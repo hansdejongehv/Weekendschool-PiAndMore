@@ -5,4 +5,4 @@ On 14 January 2017, a presentation was given and a workshop held at the Pi And M
 
 This repository contains the presentation and the workshop material.
 
-WARNING: As a result of the workshop and update is needed. You are welcome to have a look at the material, however if you want to use it, please wait for the 1.0 release that is planned for Tuesday 24 January 2017.
+WARNING: As a result of the workshop and update is needed. You are welcome to have a look at the material, however if you want to use it, please wait for the 1.0 release that is planned for Tuesday 31 January 2017.
