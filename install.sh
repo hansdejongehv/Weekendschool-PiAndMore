@@ -8,7 +8,9 @@
 # It will:
 # - download and install the Arduino IDE 1.8.0, which is needed for
 #   loading the scratchClient sketch in the Arduino Nano or Uno.
-# - download and put scratchClient at the right place.
+# - put scratchClient at the right place. Currently it is included in this
+#   distribution because there is currently no possibilityto refer to the specific
+#   release that was tested with.
 # - download and install the packages that scratchClient needs.
 # - put the material of the PiAndMore workshop in a subfolder on the 
 #   desktop and give the scripts execute permission.
@@ -18,9 +20,9 @@
 ##############
 
 
-##############
-# Download and install Arduino 1.8.0
-##############
+echo "##############"
+echo "# Download and install Arduino 1.8.0"
+echo "##############"
 cd ~				# go to the home directory
 mkdir Arduino-1.8.0		# make a directory for installing the Arduino IDE
 cd Arduino-1.8.0		# go in that directory
@@ -34,34 +36,34 @@ rm ../arduino-1.8.0-linuxarm.tar.xz	# remove the downloaded package
 ##############
 
 
-##############
-# Download and put scratchClient at the right place and install required packages
-##############
+echo "##############"
+echo "# Put scratchClient at the right place and install required packages"
+echo "##############"
 cd ~				# go to the home directory
-wget http://heppg.de/ikg/administration/pi/scratchClient/download/scratchClient.tar.gz
+# wget http://heppg.de/ikg/administration/pi/scratchClient/download/scratchClient.tar.gz
 				# download scratchClient
-tar xzf scratchClient.tar.gz	# unpack scratchClient
+tar xzf PiAndMore/scratchClient/scratchClient.tar.gz	# unpack scratchClient
 chmod +r -R scratchClient/	# set read permission on the entire tree
 sudo apt-get update		# update Raspian
 sudo apt-get install python-pip python-dev
 				# get install packages that scratchClient needs ...
 sudo pip install cherrypy routes mako ws4py spidev
 				# ... and the same for the rest of the needed packages.
-rm scratchClient.tar.gz		# Cleanup: remove the downloaded archive
+# rm scratchClient.tar.gz		# Cleanup: remove the downloaded archive
 
 
-##############
-# Download the workshop material of the PiAndMore conference
-# Github results in a less than optimal placement of files and names of directories, so 
-# that is also corrected here.
-##############
+echo "##############"
+echo "# Install the workshop material of the PiAndMore conference
+echo "# Github results in a less than optimal placement of files and names of directories, so"
+echo "# that is also corrected here."
+echo "##############"
 cd ~/Weekendschool-PiAndMore-PiAndMore*
 				# go into the directory where the material was unpacked into.
 				# use a wildcard so that later releases do not require update
 				# of this script.
 mv README.md PiAndMore		# move the readme file into the subdirectory
 mv PiAndMore ~/Desktop		# move the subdirectory to the Desktop
-rm ../PiAndMore-*.tar.gz	# remove the archive file that was downloaded
+# rm ../PiAndMore-*.tar.gz	# remove the archive file that was downloaded
 cp install.sh ~/Desktop/PiAndMore
 				# copy the install script (this script that is executed)
 				# it will have left the executable property by this copy, but 
@@ -71,7 +73,7 @@ cd ~/Desktop/PiAndMore/ForHelpers
 				# Go to the directory with scripts
 chmod 744 DownloadLes.bash
 chmod 744 StartScratch.bash
-cdmod 744 UploadResultaten.bash
+chmod 744 UploadResultaten.bash
 chmod 744 USBpoorten.sh
 				
 				# FINAL CLEANUP

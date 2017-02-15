@@ -1,8 +1,17 @@
-cd ~				# go to the home folder
-wget https://github.com/hansdejongehv/Weekendschool-PiAndMore/archive/PiAndMore-vX.X.tar.gz
-				# download the archive
-tar xzf PiAndMore-*		# unpack the archive. The asterix is to avoid typing too much.
-cd Wee*				# change directory to the directory into which into which the
-                                # archive was unpacked. The asterix is to avoid typing
-chmod 744 install.sh		# make sure that the install script can be executed.
-./install.sh			# execute the install script
+Pre-release of the update after Pi And More
+
+This is a pre-release after the update following Pi And More.
+It has not yet been tested. The final release has been delayed and is now planned for end February 2017. Sorry for the delay.
+
+To install, open a terminal window and copy line by line the commands below, or put them together into a script.
+
+
+set release=x.y
+cd ~						# go to the home folder
+wget https://github.com/hansdejongehv/Weekendschool-PiAndMore/archive/PiAndMore-v$release.tar.gz
+						# download the archive
+tar xzf PiAndMore-v$release.tar.gz		# unpack the archive.
+cd Weekendschool-PiAndMore-v$release		# change directory to the directory into which into which the
+                                		# archive was unpacked. 
+chmod 744 install.sh				# make sure that the install script can be executed.
+./install.sh					# execute the install script
