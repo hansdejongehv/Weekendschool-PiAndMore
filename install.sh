@@ -50,7 +50,7 @@ sudo apt-get install python-pip python-dev
 				# get install packages that scratchClient needs ...
 sudo pip install cherrypy routes mako ws4py spidev
 				# ... and the same for the rest of the needed packages.
-rm ~/Weekendschool-PiAndMore-PiAndMore*/PiAndMore/scratchClient/scratchClient.tar.gz		# Cleanup: remove the downloaded archive
+rm ~/Weekendschool-PiAndMore-PiAndMore*/PiAndMore/scratchClient		# Cleanup: remove the downloaded archive and the directory 
 
 
 echo "##############"
