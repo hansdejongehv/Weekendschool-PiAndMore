@@ -43,14 +43,14 @@ echo "##############"
 cd ~				# go to the home directory
 # wget http://heppg.de/ikg/administration/pi/scratchClient/download/scratchClient.tar.gz
 				# download scratchClient
-tar xzf PiAndMore/scratchClient/scratchClient.tar.gz	# unpack scratchClient
+tar xzf ~/Weekendschool-PiAndMore-PiAndMore*/PiAndMore/scratchClient/scratchClient.tar.gz	# unpack scratchClient
 chmod +r -R scratchClient/	# set read permission on the entire tree
 sudo apt-get update		# update Raspian
 sudo apt-get install python-pip python-dev
 				# get install packages that scratchClient needs ...
 sudo pip install cherrypy routes mako ws4py spidev
 				# ... and the same for the rest of the needed packages.
-# rm scratchClient.tar.gz		# Cleanup: remove the downloaded archive
+rm ~/Weekendschool-PiAndMore-PiAndMore*/PiAndMore/scratchClient/scratchClient.tar.gz		# Cleanup: remove the downloaded archive
 
 
 echo "##############"

@@ -6,7 +6,7 @@ It has not yet been tested. The final release has been delayed and is now planne
 To install, open a terminal window and copy line by line the commands below, or put them together into a script.
 
 
-set release=x.y
+release=x.y
 cd ~						# go to the home folder
 wget https://github.com/hansdejongehv/Weekendschool-PiAndMore/archive/PiAndMore-v$release.tar.gz
 						# download the archive
