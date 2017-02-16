@@ -1,3 +1,4 @@
+set -x
 #############
 # 
 # This is the install script which will install the material of the 
@@ -53,7 +54,7 @@ sudo pip install cherrypy routes mako ws4py spidev
 
 
 echo "##############"
-echo "# Install the workshop material of the PiAndMore conference
+echo "# Install the workshop material of the PiAndMore conference"
 echo "# Github results in a less than optimal placement of files and names of directories, so"
 echo "# that is also corrected here."
 echo "##############"
@@ -72,11 +73,11 @@ cp install.sh ~/Desktop/PiAndMore
 cd ~/Desktop/PiAndMore/ForHelpers
 				# Go to the directory with scripts
 chmod 744 DownloadLes.bash
-chmod 744 StartScratch.bash
+chmod 744 StartScratchClient.bash
 chmod 744 UploadResultaten.bash
 chmod 744 USBpoorten.sh
 				
-				# FINAL CLEANUP
+echo "# FINAL CLEANUP"
 				# remove the folder into which the material was unpacked.
 				# note that this also deletes this install script, but since
 				# that is the almost last line, it should not be a problem.
