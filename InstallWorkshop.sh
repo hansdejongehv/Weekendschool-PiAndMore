@@ -27,9 +27,10 @@ cd ~/Weekendschool-PiAndMore-PiAndMore*
 				# use a wildcard so that later releases do not require update
 				# of this script.
 mv README.md PiAndMore		# move the readme file into the subdirectory
+rm -rf ~/PiAndMore		# erase the old directory if it is present
 mv PiAndMore ~			# move the subdirectory to the home directory
 # rm ../PiAndMore-*.tar.gz	# remove the archive file that was downloaded
-cp Install* ~/PiAndMore
+# cp Install* ~/PiAndMore
 				# copy the install scripts (including this script that is executed)
 				# it will loose the executable property by this copy operation, but 
 				# that is fine. It is only to be used for reference since the 
@@ -42,6 +43,7 @@ chmod 744 UploadResultaten.bash
 chmod 744 USBpoorten.sh
 
 # Copy the presentation to the desktop and make it read only
+
 
 
 # Copy the config file to the desktop
