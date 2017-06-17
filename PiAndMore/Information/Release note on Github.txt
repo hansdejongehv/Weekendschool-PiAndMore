@@ -1,17 +1,14 @@
-Pre-release of the update after Pi And More
+Pre-release of the workshop for Pi and More 10.
 
-This is a pre-release after the update following Pi And More.
-It has not yet been tested. The final release has been delayed and is now planned for end February 2017. Sorry for the delay.
+This is only for testing.
 
 To install, open a terminal window and copy line by line the commands below, or put them together into a script.
 
 
 release=x.y
-cd ~						# go to the home folder
-wget https://github.com/hansdejongehv/Weekendschool-PiAndMore/archive/PiAndMore-v$release.tar.gz
-						# download the archive
-tar xzf PiAndMore-v$release.tar.gz		# unpack the archive.
-cd Weekendschool-PiAndMore-PiAndMore-v$release	
-# change directory to the directory into which into which the archive was unpacked. 
-chmod 744 install.sh				# make sure that the install script can be executed.
-./install.sh					# execute the install script
+cd ~ # go to the home folder
+wget https://github.com/hansdejongehv/Weekendschool-PiAndMore/archive/PiAndMore-v$release.tar.gz # download the archive
+tar xzf PiAndMore-v$release.tar.gz # unpack the archive.
+cd Weekendschool-PiAndMore-PiAndMore-v$release # change directory to the directory into which into which the archive was unpacked. 
+chmod 744 Install.sh # make sure that the install script can be executed.
+./Install.sh # execute the install script
