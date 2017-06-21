@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=Qo1gnXNzhqE
+
+/home/pi/scratchClient/tools
+
+scratchClientConfig.sh
+
+PiAndMore.xml
+
+StartSC.bash
+
