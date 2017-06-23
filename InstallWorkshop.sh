@@ -38,17 +38,21 @@ mv PiAndMore ~			# move the subdirectory to the home directory
 cd ~/PiAndMore/ForHelpers
 				# Go to the directory with scripts
 chmod 744 *.bash
-# chmod 744 DownloadLes.bash
-# chmod 744 StartScratchClient.bash
-# chmod 744 UploadResultaten.bash
-# chmod 744 USBpoorten.sh
+
 
 # Make the PiAndMore folder on the desktop
-mkdir ~/Desktop/PiAndMore	# make the working directory on the desktop
+if [ -e ~/Desktop/PiAndMore ] ;
+then
+	echo "~/Desktop/PiAndMore already exists, no new directory created."
+else
+	mkdir ~/Desktop/PiAndMore	# make the working directory on the desktop
+fi
 
 # Copy the presentation to the desktop/PiAndMore folder and make it read only
-
-
+cd /home/pi/PiAndMore/Part-1--Breadboard
+cp PiAndMore.*.odp' ~/Desktop/PiAndMore
+cp ForCopyPaste.txt ~/Desktop/PiAndMore
+chmod 444 ~/Desktop/PiAndMore/*
 
 # Copy the config file to the desktop
 
