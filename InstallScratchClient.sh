@@ -34,7 +34,7 @@ case "$InstallScratchClient" in
 
 		if  [  -e ~/scratchClient ] ; 
 		then 
-			rm -r ~/scratchClient 
+			sudo rm -r ~/scratchClient 
 		fi
 
 		cd ~				# go to the home directory

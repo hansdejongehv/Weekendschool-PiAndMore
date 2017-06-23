@@ -54,7 +54,8 @@ source ./InstallArduino.sh
 cd $thisdir
 source ./InstallWorkshop.sh
 
-
+cd $thisdir
+source ./InstallLes2.sh
 				
 echo "# FINAL CLEANUP"
 				# remove the folder into which the material was unpacked.

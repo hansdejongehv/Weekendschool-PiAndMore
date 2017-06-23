@@ -37,12 +37,16 @@ mv PiAndMore ~			# move the subdirectory to the home directory
 				# references to the paths would be wrong anyway.
 cd ~/PiAndMore/ForHelpers
 				# Go to the directory with scripts
-chmod 744 DownloadLes.bash
-chmod 744 StartScratchClient.bash
-chmod 744 UploadResultaten.bash
-chmod 744 USBpoorten.sh
+chmod 744 *.bash
+# chmod 744 DownloadLes.bash
+# chmod 744 StartScratchClient.bash
+# chmod 744 UploadResultaten.bash
+# chmod 744 USBpoorten.sh
 
-# Copy the presentation to the desktop and make it read only
+# Make the PiAndMore folder on the desktop
+mkdir ~/Desktop/PiAndMore	# make the working directory on the desktop
+
+# Copy the presentation to the desktop/PiAndMore folder and make it read only
 
 
 
