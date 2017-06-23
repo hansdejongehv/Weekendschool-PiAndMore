@@ -8,3 +8,11 @@ PiAndMore.xml
 
 StartSC.bash
 
+!# /bin/bash
+sudo python ~/scratchClient/src/scratchClient.py -c ~/Desktop/PiAndMore/PiAndMore.xml
+pause –p “Press Enter to continue”
+
+PiAndMore.sb
+
+localhost:8080
+
