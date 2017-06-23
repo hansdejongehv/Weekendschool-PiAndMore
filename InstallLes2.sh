@@ -23,7 +23,7 @@ then
 fi
 
 
-release=1.0.1
+release=1.0.2
 		
 cd ~ # go to the home folder
 rm -rf $release.tar.gz*
