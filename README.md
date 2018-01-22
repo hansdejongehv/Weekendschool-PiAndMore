@@ -1,4 +1,6 @@
 # Weekendschool-PiAndMore
+--> This project is under revision in preparation for a proposed workshop at Pi And More 10 1/2 in Stuttgart at 24 February 2018 <--
+
 Repository for the presentation and workshop material for the Weekendschool tutorial at Pi And More 10
 
 On 24 June 2017, a presentation will be given and a workshop held at the Pi And More 10 conference about a lesson programming with Arduino, Scratch and ScratchClient as it was / will be used during programming classes at the Trudo Weekendschool and IMC Weekendschool in The Netherlands.
